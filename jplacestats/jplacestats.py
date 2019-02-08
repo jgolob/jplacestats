@@ -36,7 +36,7 @@ def open_file(path):
         return open(path, mode='rt')
 
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         'jplace',
@@ -109,3 +109,7 @@ if __name__ == '__main__':
             ])
     csv_h.close()
     sys.exit(0)
+
+
+if __name__ == '__main__':
+    main()

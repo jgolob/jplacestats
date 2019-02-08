@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="jplacestats",
-    version="0.0.1",
+    version="0.0.2",
     author="Jonathan Golob",
     author_email="j-dev@golob.org",
     description="Retrieve stats on the placement quality",
@@ -13,6 +13,9 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/jgolob/jplacestats",
     packages=setuptools.find_packages(),
+    entry_points={
+        'console_scripts': ['jplacestats=jplacestats.jplacestats:main'],
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
