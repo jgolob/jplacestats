@@ -1,7 +1,7 @@
 import setuptools
 
-#with open("README.md", "r") as fh:
-#    long_description = fh.read()
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setuptools.setup(
     name="jplacestats",
@@ -9,9 +9,9 @@ setuptools.setup(
     author="Jonathan Golob",
     author_email="j-dev@golob.org",
     description="Retrieve stats on the placement quality",
-#    long_description=long_description,
-#    long_description_content_type="text/markdown",
-    #url="https://github.com/pypa/sampleproject",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/jgolob/jplacestats",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
